@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>The Gossip Project</title>
+	</head>
+
+<body>
+
+<main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Bienvenue sur The Gossip Project !</h1>
+      <p class="lead text-muted"> Retrouvez ici tous les potins croustillants de THP.</p>
+     <!--  <p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+      </p> -->
+    </div>
+  </section>
+
+	<% Gossip.all.each do |gossip| %>
+
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> <%=gossip.title %></h5>
+    <p class="card-text">Posté par : <%=gossip.user.first_name %> </p>
+    <a href="#" class="btn btn-info">Voir le détail</a>
+  </div>
+  <div class="card-footer text-muted">
+    Créé le : <%=gossip.created_at %>
+  </div>
+</div>
+<br>
+<br>
+
+<% end %>
+
+</body>
+
+</html>
