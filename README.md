@@ -1,24 +1,12 @@
-# README
+# THE GOSSIP PROJECT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application permettant de visualiser (pour l'instant) des potins 
 
-Things you may want to cover:
+Utilisation de : 
+ruby '2.5.1'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+Bootstrap (fichier CSS dans app/assets/stylesheets)
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

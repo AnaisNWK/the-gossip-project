@@ -28,7 +28,7 @@
   <div class="card-body">
     <h5 class="card-title"> <%=gossip.title %></h5>
     <p class="card-text">Posté par : <%=gossip.user.first_name %> </p>
-    <a href="#" class="btn btn-info">Voir le détail</a>
+    <a href="<%=gossip_path(gossip.id)%>" class="btn btn-info">Voir le détail</a>
   </div>
   <div class="card-footer text-muted">
     Créé le : <%=gossip.created_at %>

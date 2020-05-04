@@ -14,7 +14,7 @@ class StaticController < ApplicationController
 	end
 
 	def gossip
-		@id = params[:id]
+		@id = params[:id].to_i
 	end
 
 end
